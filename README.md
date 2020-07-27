@@ -1,2 +1,2 @@
 # Mars
-Monitoring, Auditing and Reporting System
+Monitoring, Auditing and Reporting System (MARS)
