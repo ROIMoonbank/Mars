@@ -1,30 +1,31 @@
 # Mars Demonstration
 Monitoring, Auditing and Reporting System (MARS)
 
-## TO MAKE MARS WORK
+## TO MAKE **MARS** WORK
 gcloud config set project YOURPROJECTNAME\
 Bucket named "projectid-bucket"\
 Dataflow API enabled  (enabled via script in run-cloud.sh)\
-    gcloud services enable dataflow.googleapis.com
+    `Command:
+    gcloud services enable dataflow.googleapis.com`
 
 BigQuery Dataset called "mars"\
-    Command: 
-        bq mk mars
+    `Command: 
+        bq mk mars`
 
 BigQuery Table called "activities" - starting schema\
-    Command: 
+    `Command: 
         bq mk --schema 
         timestamp:STRING,ipaddr:STRING,action:STRING,srcacct:STRING,destacct:STRING,amount:NUMERIC,customername:STRING 
-        -t mars.activities
+        -t mars.activities`
     
-    Schema:
+    `Schema:
         timestamp:STRING,
         ipaddr:STRING,
         action:STRING,
         srcacct:STRING,
         destacct:STRING,
         amount:NUMERIC,
-        customername:STRING
+        customername:STRING`
 
 Copy Data Studio Dashboard and adjust to your project.dataset.table\
     https://datastudio.google.com/reporting/3f79b633-ac24-43b3-86c8-41f386ea514a
