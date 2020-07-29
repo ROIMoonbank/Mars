@@ -1,7 +1,7 @@
 # Mars Demonstration
 Monitoring, Auditing and Reporting System (MARS)
 
-##TO MAKE MARS WORK\
+## TO MAKE MARS WORK\
 gcloud config set project YOURPROJECTNAME\
 Bucket named "projectid-bucket"\
 Dataflow API enabled  (enabled via script in run-cloud.sh)\
@@ -31,7 +31,7 @@ Copy Data Studio Dashboard and adjust to your project.dataset.table\
 Sample Data Bucket: gs://moonbank-mars-sample\
 Production Data Bucket: gs://moonbank-mars-production\
 
-##CONVERSION TO PUB/SUB
+## CONVERSION TO PUB/SUB
 gcloud pubsub subscriptions create mars-activities --topic projects/moonbank-mars/topics/activities
 Update requirements.txt
     add google-cloud-pubsub==1.7.0
