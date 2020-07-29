@@ -5,15 +5,17 @@ Monitoring, Auditing and Reporting System (MARS)
 gcloud config set project YOURPROJECTNAME\
 Bucket named "projectid-bucket"\
 Dataflow API enabled  (enabled via script in run-cloud.sh)\
-    gcloud services enable dataflow.googleapis.com\
+    gcloud services enable dataflow.googleapis.com
 
 BigQuery Dataset called "mars"\
-    Command: bq mk mars\
+    Command: 
+        bq mk mars
 
 BigQuery Table called "activities" - starting schema\
-    Command: bq mk --schema \
-    timestamp:STRING,ipaddr:STRING,action:STRING,srcacct:STRING,destacct:STRING,amount:NUMERIC,customername:STRING \
-    -t mars.activities
+    Command: 
+        bq mk --schema 
+        timestamp:STRING,ipaddr:STRING,action:STRING,srcacct:STRING,destacct:STRING,amount:NUMERIC,customername:STRING 
+        -t mars.activities
     
     Schema:
         timestamp:STRING,
