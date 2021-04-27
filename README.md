@@ -31,7 +31,7 @@ Make a Copy of this Data Studio Dashboard and adjust to your project.dataset.tab
 
 Clone this Git Repository into your Cloud Shell\
     `Command: git clone https://github.com/ROIMoonbank/Mars`\
-    `Command: cd Mars`\
+    `Command: cd Mars`
 
 Run the Local Version (in Cloud Shell)\
 (also installs the required components)\
@@ -59,4 +59,4 @@ To include google-cloud-pubsub - add the following line to `requirements.txt`\
     `Line to add: google-cloud-pubsub==1.7.0`
 
 The Challenge is: What needs to be added to the the Python code to process the stream!\
-(Please try and experiment - hints are located in the streaming folder of this gitrepo)\
+(Please try and experiment - hints are located in the streaming folder of this gitrepo)
