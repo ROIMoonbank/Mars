@@ -29,9 +29,24 @@ BigQuery Table called "activities" - starting schema\
 Make a Copy of this Data Studio Dashboard and adjust to your project.dataset.table\
     `URL: https://datastudio.google.com/reporting/3f79b633-ac24-43b3-86c8-41f386ea514a`
 
+Clone this Git Repository into your Cloud Shell
+    git clone https://github.com/ROIMoonbank/Mars
+    cd Mars
+
+Run the Local Version (in Cloud Shell) (also installs the required components)
+    (Review the script and mars-local.py BEFORE running)
+    ./run-local.sh
+
+Run the Cloud Version (in Cloud Shell) (also installs the required components)
+    (Review the script and mars-cloud.py BEFORE running)
+    ./run-cloud.sh
+
+
 Buckets with Moonbank Data\
 Sample Data Bucket (2x small files): `gs://moonbank-mars-sample`
 Production Data Bucket (25x larger files): `gs://moonbank-mars-production`
+
+
 
 ## CONVERSION TO PUB/SUB
 
