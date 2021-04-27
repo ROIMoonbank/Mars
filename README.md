@@ -46,7 +46,7 @@ Run the Cloud Version (in Cloud Shell)\
 
 Buckets with Moonbank Data\
 Sample Data Bucket (2x small files): `gs://moonbank-mars-sample`\
-Production Data Bucket (25x larger files): `gs://moonbank-mars-production`\
+Production Data Bucket (25x larger files): `gs://moonbank-mars-production`
 
 
 
