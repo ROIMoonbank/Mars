@@ -29,9 +29,9 @@ BigQuery Table called "activities" - starting schema\
 Make a Copy of this Data Studio Dashboard and adjust to your project.dataset.table\
     `URL: https://datastudio.google.com/reporting/3f79b633-ac24-43b3-86c8-41f386ea514a`
 
-Clone this Git Repository into your Cloud Shell
-    git clone https://github.com/ROIMoonbank/Mars
-    cd Mars
+Clone this Git Repository into your Cloud Shell\
+    'Command: git clone https://github.com/ROIMoonbank/Mars'
+    'Command: cd Mars'
 
 Run the Local Version (in Cloud Shell) (also installs the required components)
     (Review the script and mars-local.py BEFORE running)
