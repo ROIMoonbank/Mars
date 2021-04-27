@@ -55,5 +55,8 @@ Production Data Bucket (25x larger files): `gs://moonbank-mars-production`\
 Subscribe to the Mars Activity Topic\
 `command: gcloud pubsub subscriptions create mars-activities --topic projects/moonbank-mars/topics/activities`
 
-To include google-cloud-pubsub - add the following line to requirements.txt\
+To include google-cloud-pubsub - add the following line to `requirements.txt`\
     `Line to add: google-cloud-pubsub==1.7.0`
+
+Channel: What needs to be added to the the Python code to process the stream!\
+(Please try and experiment - hints are located in the streaming folder of this gitrepo)\
