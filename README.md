@@ -30,16 +30,18 @@ Make a Copy of this Data Studio Dashboard and adjust to your project.dataset.tab
     `URL: https://datastudio.google.com/reporting/3f79b633-ac24-43b3-86c8-41f386ea514a`
 
 Clone this Git Repository into your Cloud Shell\
-    'Command: git clone https://github.com/ROIMoonbank/Mars'
-    'Command: cd Mars'
+    `Command: git clone https://github.com/ROIMoonbank/Mars`\
+    `Command: cd Mars`\
 
-Run the Local Version (in Cloud Shell) (also installs the required components)
-    (Review the script and mars-local.py BEFORE running)
-    ./run-local.sh
+Run the Local Version (in Cloud Shell)\
+(also installs the required components)\
+    (Review the script and mars-local.py BEFORE running)\
+    `Command: ./run-local.sh`
 
-Run the Cloud Version (in Cloud Shell) (also installs the required components)
-    (Review the script and mars-cloud.py BEFORE running)
-    ./run-cloud.sh
+Run the Cloud Version (in Cloud Shell)\
+(also installs the required components)\
+    (Review the script and mars-cloud.py BEFORE running)\
+    `Command: ./run-cloud.sh`
 
 
 Buckets with Moonbank Data\
