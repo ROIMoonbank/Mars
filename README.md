@@ -1,6 +1,12 @@
 # MARS Demonstration
 Monitoring, Auditing and Reporting System (MARS)
 
+## Clone in the Repo
+Open Cloud Shell\
+Clone in the `https://github.com/ROIMoonbank/Mars` repo
+    `Command: git clone https://github.com/ROIMoonbank/Mars`\
+    `Command: cd Mars`
+
 ## GETTING MARS WORKING IN CLOUDSHELL
 Make sure you have a project set\
     `Command: gcloud config set project YOURPROJECTNAME`
