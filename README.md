@@ -34,13 +34,6 @@ BigQuery Table called "activities" - starting schema\
         amount:NUMERIC,
         customername:STRING`
 
-Make a Copy of this Data Studio Dashboard and adjust to your project.dataset.table\
-    `URL: https://datastudio.google.com/reporting/3f79b633-ac24-43b3-86c8-41f386ea514a`
-
-Clone this Git Repository into your Cloud Shell\
-    `Command: git clone https://github.com/ROIMoonbank/Mars`\
-    `Command: cd Mars`
-
 Run the Local Version (in Cloud Shell)\
 (also installs the required components)\
     (Review the script and mars-local.py BEFORE running)\
@@ -51,17 +44,38 @@ Run the Cloud Version (in Cloud Shell)\
     (Review the script and mars-cloud.py BEFORE running)\
     `Command: ./run-cloud.sh`
 
-
 Buckets with Moonbank Data\
 Sample Data Bucket (2x small files): `gs://moonbank-mars-sample`\
 Production Data Bucket (25x larger files): `gs://moonbank-mars-production`
 
+## Data Studio Dashboard 
+Make a Copy of this Data Studio Dashboard and adjust to your project.dataset.table\
+    `URL: https://datastudio.google.com/reporting/3f79b633-ac24-43b3-86c8-41f386ea514a`
+
+## Conversion to Pub/Sub and BigQuery
+The Streaming examples (located in `/streaming/`) have been adjusted to read a pub/sub topic and write into BigQuery\
+However - they only write the data into a single column (`message:string`) in a table named `raw`\
+Streaming inserts expect data formatted in JSON
 
 
-## CONVERSION TO PUB/SUB
+## GETTING MARS STREAMING WORKING IN CLOUDSHELL
+BigQuery Dataset called `mars` and a table `raw`\
+    `Command: bq mk mars`
+    `Command: bq mk --schema message:STRING -t mars.raw`
 
 Subscribe to the Mars Activity Topic\
-`command: gcloud pubsub subscriptions create mars-activities --topic projects/moonbank-mars/topics/activities`
+`Command: gcloud pubsub subscriptions create mars-activities --topic projects/moonbank-mars/topics/activities`
 
-The Challenge: Convert to processing the newly created Subscription instead of the files in GCS\
+Run the Local Version (in Cloud Shell)\
+(also installs the required components)\
+    (Review the script and mars-local.py BEFORE running)\
+    `Command: cd streaming`
+    `Command: ./run-stream-local.sh`
+
+Run the Cloud Version (in Cloud Shell)\
+(also installs the required components)\
+    (Review the script and mars-cloud.py BEFORE running)\
+    `Command: ./run-stream-cloud.sh`
+
+The Challenge: Adjust the transformation function (`processline`) to create a JSON block that represents the row and adjust to insert the row into the `mars.activity` table\
 Sample code is available in the streaming folder\
