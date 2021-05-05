@@ -55,8 +55,7 @@ Make a Copy of this Data Studio Dashboard and adjust to your project.dataset.tab
 ## Conversion to Pub/Sub and BigQuery
 The Streaming examples (located in `/streaming/`) have been adjusted to read a pub/sub topic and write into BigQuery\
 However - they only write the data into a single column (`message:string`) in a table named `raw`\
-Streaming inserts expect data formatted in JSON
-
+Streaming inserts expect data formatted in JSON instead of CSV
 
 ## GETTING MARS STREAMING WORKING IN CLOUDSHELL
 BigQuery Dataset called `mars` and a table `raw`\
@@ -77,5 +76,6 @@ Run the Cloud Version (in Cloud Shell)\
     (Review the script and mars-cloud.py BEFORE running)\
     `Command: ./run-stream-cloud.sh`
 
-The Challenge: Adjust the transformation function (`processline`) to create a JSON block that represents the row and adjust to insert the row into the `mars.activity` table\
-Sample code is available in the streaming folder
+## CHALLENGE
+Adjust the transformation function (`processline`) to create the JSON that represents the row and adjust to insert the row into the `mars.activity` table
+
