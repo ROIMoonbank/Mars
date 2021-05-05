@@ -78,4 +78,4 @@ Run the Cloud Version (in Cloud Shell)\
     `Command: ./run-stream-cloud.sh`
 
 The Challenge: Adjust the transformation function (`processline`) to create a JSON block that represents the row and adjust to insert the row into the `mars.activity` table\
-Sample code is available in the streaming folder\
+Sample code is available in the streaming folder
