@@ -59,7 +59,7 @@ Streaming inserts expect data formatted in JSON instead of CSV
 
 ## GETTING MARS STREAMING WORKING IN CLOUDSHELL
 BigQuery Dataset called `mars` and a table `raw`\
-    `Command: bq mk mars`
+    `Command: bq mk mars`\
     `Command: bq mk --schema message:STRING -t mars.raw`
 
 Subscribe to the Mars Activity Topic\
@@ -68,7 +68,7 @@ Subscribe to the Mars Activity Topic\
 Run the Local Version (in Cloud Shell)\
 (also installs the required components)\
     (Review the script and mars-local.py BEFORE running)\
-    `Command: cd streaming`
+    `Command: cd streaming`\
     `Command: ./run-stream-local.sh`
 
 Run the Cloud Version (in Cloud Shell)\
